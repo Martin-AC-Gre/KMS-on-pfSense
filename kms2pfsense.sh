@@ -73,7 +73,7 @@ echo "#" >> /usr/local/etc/rc.d/kms_start.sh
 echo "# startup script on bootup for KMS server" >> /usr/local/etc/rc.d/kms_start.sh
 echo "# 30 day renewal, 7 day failed retry interval" >> /usr/local/etc/rc.d/kms_start.sh
 echo "#" >> /usr/local/etc/rc.d/kms_start.sh
-echo "/bin/vlmcsd -R30d -A7d" >> /usr/local/etc/rc.d/kms_start.sh
+echo "/bin/vlmcsd -R30d -A7d -L 10.255.10.254" >> /usr/local/etc/rc.d/kms_start.sh
 }
 
 makeExecute()
